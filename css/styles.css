@@ -116,8 +116,7 @@ header{
   height: 400px;
   min-height: 400px;                /* Parallax effect */
   /* Your code here */
-  background-image: url("../images/header.jpg");
-  background-color:  #DDDDDD #858585 #707070 #B3B3B3;
+  background: url("../images/header.jpg"), #DDDDDD;
   /* Set background-image to header.jpg in the images folder */
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
@@ -136,7 +135,7 @@ header p{
   /*Your code here  */
   /* See documentation for mobile view */
   display: grid;
-  grid-template-columns: 1fr, 5fr, 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
 }
 
@@ -206,8 +205,8 @@ header p{
   .container{
     /*Your code here */
     /* See documentation for desktop view */
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: 70px, 400px, 400px, 400px, 400px, 400px, 100px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
 
   .skip a:focus{
@@ -227,7 +226,8 @@ header p{
     background-color: #ddd;
     text-align: right;
     padding: 35px 0px;
-    align-self: right;
+    /*align-self: right;*/
+    display: grid;
     justify-content: right;
     grid-column: 1 / 6;
   }
